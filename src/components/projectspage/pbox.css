@@ -1,0 +1,8 @@
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.proimg{
+    width: 90%;
+}

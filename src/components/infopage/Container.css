@@ -1,0 +1,22 @@
+.info-con-form{
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #ededed;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    padding: 7px;
+}
+
+.con-msg{
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width:768px) {
+    .info-con-form{
+        width: 5rem;
+        height: 5rem;
+    }
+}

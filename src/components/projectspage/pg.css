@@ -1,0 +1,91 @@
+.projectspage {
+    width: 100vw;
+    height: 100vh;
+    border-top: 2px solid rgb(0, 145, 255);
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promaincon {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.propagename {
+    width: 100%;
+    height: 10%;
+    font-size: 2rem;
+    font-style: oblique;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+
+.all-pro {
+    width: 100%;
+    height: 90%;
+}
+
+.swiper-container {
+    overflow: hidden;
+    padding-top: 50px;
+    height: 100%;
+    padding-right: 10%;
+    display: grid;
+    place-items: center;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    width: 100%;
+    margin-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proslides {
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    background-color: antiquewhite;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.probox{
+    width: 100%;
+    height: 90%;
+    padding: 2%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgb(224, 224, 224);
+    display: grid;
+    place-items: center;
+}
+.proimg{
+    height: 85%;
+    overflow: hidden;
+}
+.proname{
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+}
+.protag{
+    text-align: end;
+    color: orange;
+}
+@media (max-width:768px) {
+    .swiper-wrapper{
+        height: 50%;
+    }
+    #proslides{
+        width: 16rem;
+    }
+}

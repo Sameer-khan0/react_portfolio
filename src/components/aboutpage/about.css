@@ -1,0 +1,76 @@
+#about {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%; 
+    border-top: 2px solid rgb(0, 145, 255);
+}
+  .aboutitem{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    z-index: 12;
+    font-size: xx-large;
+    color: #007BFF;
+  }
+  .abt-heading h2{
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: oblique;
+  }
+  .abt-left-con {
+position: relative;
+    flex: 1;
+  }
+  
+  .abt-left-con img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .abt-right-con {
+    flex: 2;
+    padding-left: 20px; /* Adjust the padding as needed */
+  }
+  
+  .abt-heading h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
+  }
+  
+  .abt-introduction p {
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.6; /* Adjust the line height as needed */
+    color: #555; /* Adjust the color as needed */
+  }
+  
+  .abt-introduction a {
+    color: #007BFF; /* Adjust the color as needed */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .abt-introduction a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Optional: Add responsive styles */
+  @media (max-width: 768px) {
+    #about {
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .abt-left-con img {
+      margin-bottom: 20px; /* Adjust the margin as needed */
+    }
+  
+    .abt-right-con {
+      padding-left: 0;
+    }
+  }
+  

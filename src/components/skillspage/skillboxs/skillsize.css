@@ -1,0 +1,45 @@
+.skillbox {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  position: relative;
+  background-color: #f3f3f3;
+  box-shadow: 2px 4px 6px rgb(156 156 156);
+  margin-bottom: 10px;
+}
+.skillname1 {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: oblique;
+  height: 10%;
+  text-align: center;
+}
+.skillname {
+  flex-grow: 1;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.progress {
+  height: 1rem;
+  color: white;
+  text-align: center;
+  background-color: #007bff;
+  border-radius: 5px;
+  padding-left: 2%;
+  transition: width 0.3s ease;
+}
+
+.progress[style*="10"] {
+  background-color: #e53935; /* Red for low progress */
+}
+
+.progress[style*="50"] {
+  background-color: #ffc107; /* Yellow for medium progress */
+}
+
+.progress[style*="90"] {
+  background-color: #28a745; /* Green for high progress */
+}

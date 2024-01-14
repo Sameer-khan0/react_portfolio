@@ -1,0 +1,25 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+scrollbar-width: thin;  /* For Firefox */
+scroll-behavior: smooth;  
+font-family: math,sans-serif;
+}
+  
+  *::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0.1rem;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(144, 144, 144);
+    border-radius: 0.25rem;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  

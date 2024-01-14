@@ -1,0 +1,71 @@
+.skillpage{
+    width: 100vw;
+    height: 100vh;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 2px solid blue;
+}
+.per-head{
+    width: 100%;
+    height: 10%;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: start;
+    text-align: center;
+}
+.per-sides{
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.per-right{
+    width: 100%;
+}
+.per-left .per-img{
+    height: 100%;
+}
+.per-left .per-img img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+.per-boxs{
+    padding: 1%;
+    gap: 5%;
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.per-box{
+    width: 80%;
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px #cccccc;
+}
+.per-logo{
+    font-size: xx-large;
+}
+.per-name{
+    font-size: large;
+    font-weight: bold;
+}
+@media (max-width:768px) {
+    .skillpage{
+        height: auto;
+    }
+    .per-sides{
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+}
