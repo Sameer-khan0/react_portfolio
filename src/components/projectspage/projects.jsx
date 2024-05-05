@@ -25,49 +25,49 @@ function Projects() {
     {
       project: project1,
       projectname: "Student Record mangement System",
-      link: "www.github.io",
+      link: "https://github.com/Sameer-khan0",
       tag: "MERN",
     },
     {
       project: project2,
       projectname: "Secure Notes",
-      link: "www.github.io",
+      link: "https://github.com/Sameer-khan0",
       tag: "MERN",
     },
     {
       project: project3,
       projectname: "Authentication System",
-      link: "www.github.io",
+      link: "https://github.com/Sameer-khan0",
       tag: "MERN",
     },
     {
       project: project4,
       projectname: "Chat App",
-      link: "www.github.io",
+      link: "https://github.com/Sameer-khan0",
       tag: "React+SocketIO",
     },
     {
       project: project5,
       projectname: "Snack Game",
-      link: "www.github.io",
+      link: "https://github.com/Sameer-khan0",
       tag: "html,css,js",
     },
     {
       project: project6,
       projectname: "Tik Tok Toe",
-      link: "www.github.io",
+      link: "https://github.com/Sameer-khan0",
       tag: "html,css,js",
     },
     {
       project: project7,
       projectname: "Images Slider",
-      link: "www.github.io",
+      link: "https://github.com/Sameer-khan0",
       tag: "html,css,js",
     },
     {
       project: project8,
       projectname: "Calculator",
-      link: "www.github.io",
+      link: "https://github.com/Sameer-khan0",
       tag: "html,css,js",
     }
   ];

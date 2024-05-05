@@ -44,7 +44,7 @@ function Service() {
         </div>
         <div className="ser-right">
           <div className="ser-boxs">
-            {webDevelopmentServices.map((e,i)=><Serbox name={e.serviceName} transition={e.move} logo={e.logo} desc={e.description} index={i}/>)}
+            {webDevelopmentServices.map((e,i)=><Serbox name={e.serviceName} transition={e.move} logo={e.logo} desc={e.description} key={i}/>)}
           </div>
         </div>
       </div>

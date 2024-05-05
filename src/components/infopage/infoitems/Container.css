@@ -16,7 +16,8 @@
 
 @media (max-width:768px) {
     .info-con-form{
-        width: 5rem;
-        height: 5rem;
+        width: 10rem;
+        height: 4rem;
+        font-size: small;
     }
 }

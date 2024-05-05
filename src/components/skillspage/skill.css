@@ -36,10 +36,14 @@
     padding: 1%;
     gap: 5%;
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding-bottom: 3%;
 }
 .per-box{
     width: 80%;
@@ -52,6 +56,12 @@
     align-items: center;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px #cccccc;
+}
+.per-left{
+    width: 50%;
+}
+.per-right{
+    width: 50%;
 }
 .per-logo{
     font-size: xx-large;
@@ -67,5 +77,11 @@
     .per-sides{
         flex-direction: column;
         padding-bottom: 10%;
+    }
+    .per-left{
+        width: auto;
+    }
+    .per-right{
+        width: auto;
     }
 }

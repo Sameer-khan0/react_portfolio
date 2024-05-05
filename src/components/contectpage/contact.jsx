@@ -12,17 +12,24 @@ function contect() {
     });
   };
   const whilesubmit = async (e) => {
-    console.log(values)
+    let btn = document.getElementById("submitbtn");
+    btn.value = "Loading...";
     e.preventDefault();
-    if (!values.name || !values.email || !values.phone || !values.subject || !values.msg) {
-      alert('Please fill in all required fields.');
+    if (
+      !values.name ||
+      !values.email ||
+      !values.phone ||
+      !values.subject ||
+      !values.msg
+    ) {
+      alert("Please fill in all required fields.");
       return;
     }
     try {
       setValues((prevValues) => ({ ...prevValues, loading: true }));
       const result = await emailjs.send(
-        'service_d0vu2ui',
-        'template_jjgi2w8',
+        "service_d0vu2ui",
+        "template_jjgi2w8",
         {
           name: values.name,
           email: values.email,
@@ -30,19 +37,26 @@ function contect() {
           subject: values.subject,
           message: values.msg,
         },
-        '2sOCJWTO4001zOV3a'
+        "2sOCJWTO4001zOV3a"
       );
       setValues({});
-      alert('Message is sent');
+      document.getElementById("message").value = "";
+      alert("Message is sent");
       console.log(result.text);
     } catch (error) {
       console.error(error);
-      alert('Error sending message. Please try again later.');
+      alert("Error sending message. Please try again later.");
     } finally {
+      document.getElementById("submitbtn").value = "Submit";
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
       setValues((prevValues) => ({ ...prevValues, loading: false }));
     }
   };
-  
+
   const nightmood = useContext(themeContext);
   const { isNightMode } = nightmood;
   const style = {
@@ -53,7 +67,7 @@ function contect() {
     background: `${isNightMode ? "black" : "white"}`,
     color: `${isNightMode ? "white" : "black"}`,
   };
-
+  
   return (
     <section id="contact" className="conjectspage" style={style}>
       <div className="conmaincon">
@@ -62,12 +76,18 @@ function contect() {
           <div className="contectsinputs">
             <div className="nameinput">
               <label htmlFor="name">name</label>
-              <input type="text" name="name" onChange={whileonchandege} id="name" style={styleofinputs} />
+              <input
+                type="text"
+                name="name"
+                onChange={whileonchandege}
+                id="name"
+                style={styleofinputs}
+              />
             </div>
             <div className="nameinput">
               <label htmlFor="email">Email</label>
               <input
-              onChange={whileonchandege}
+                onChange={whileonchandege}
                 type="text"
                 name="email"
                 id="email"
@@ -77,7 +97,7 @@ function contect() {
             <div className="nameinput">
               <label htmlFor="number">Number</label>
               <input
-              onChange={whileonchandege}
+                onChange={whileonchandege}
                 type="number"
                 name="phone"
                 id="phone"
@@ -87,7 +107,7 @@ function contect() {
             <div className="nameinput">
               <label htmlFor="subject">Subject</label>
               <input
-              onChange={whileonchandege}
+                onChange={whileonchandege}
                 type="text"
                 name="subject"
                 id="subject"
@@ -105,7 +125,13 @@ function contect() {
             ></textarea>
           </div>
         </div>
-        <button className="button i-button" id="submitbtn" onClick={whilesubmit}>Submit</button>
+        <button
+          className="button i-button"
+          id="submitbtn"
+          onClick={whilesubmit}
+        >
+          Submit
+        </button>
       </div>
     </section>
   );

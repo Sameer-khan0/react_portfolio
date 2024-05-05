@@ -1,6 +1,6 @@
 import React from 'react'
-import image0 from '../../assets/img/crown.png'
-import image1 from '../../assets/img/thumbup.png'
+import image0 from '../../../assets/img/crown.png'
+import image1 from '../../../assets/img/thumbup.png'
 import './Container.css'
 
 function Container(props) {

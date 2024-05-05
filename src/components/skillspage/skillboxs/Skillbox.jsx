@@ -9,7 +9,7 @@ const {isNightMode}=nightmode
 
   return (
     <motion.div
-      initial={{ left: '1.5rem', scale: 1.02,}}
+      initial={{ left: `-${props.move}rem`, scale: 1.02,}}
       whileInView={{ left: '0rem', scale: 1,}}
       whileHover={{scale:1.1}}
       transition={{ duration: 1, type: 'spring' }}

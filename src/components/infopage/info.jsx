@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { motion } from "framer-motion";
-import imogi from '../../assets/img/glassesimoji.png'
-import "./info.css";
-import Container from "./Container";
+import imoji from '../../assets/img/glassesimoji.png'
+import imoji0 from '../../assets/img/glasses.png'
+import "./infoitems/info.css";
+import Container from "./infoitems/Container";
 import {
   FaTwitter,
   FaFacebook,
@@ -11,11 +12,11 @@ import {
   FaWhatsapp,
   FaGithub,
 } from "react-icons/fa";
-import Infoimg from "./info2.png";
+import Infoimg from "./infoitems/info2.png";
 import imgbg1 from "../../assets/img/Vector2.png";
 import imgbg2 from "../../assets/img/Vector1.png";
 import { themeContext } from "../../Context";
-import Resume from './mycv.pdf'
+import cv from './infoitems/cv.pdf'
 
 function info() {
   const nightmood = useContext(themeContext);
@@ -43,17 +44,11 @@ function info() {
             development, consistently delivering high-quality work.
           </span>
         </div>
-        <a href={Resume} download>
+        <a href={cv} download>
         <button className="button i-button">
           Downlaod CV
         </button>
         </a>
-        {/* <a href="https://www.facebook.com/100093069812273" class="bx bxl-facebook"></a>
-            <a href="https://wa.me/03090248230" class="bx bxl-whatsapp"></a>
-            <a href="https://twitter.com/samkhan6tt" class="bx bxl-twitter" target="_blank"></a>
-            <a href="https://www.instagram.com/sameer_1o2/" class="bx bxl-instagram-alt" target="_blank"></a>
-            <a href="https://www.linkedin.com/in/muhammad-sameer-719b9a270/" class="bx bxl-linkedin" target="_blank"></a>
-            <a href="https://github.com/Sameer-khan0" class='bx bxl-github' target="_blank"></a> */}
         <div className="i-icons">
           <a href="https://twitter.com/samkhan6tt"><FaTwitter style={iconstyle} className="icon" /></a>
           <a href="https://www.facebook.com/100093069812273"><FaFacebook style={iconstyle} className="icon" /></a>
@@ -63,10 +58,10 @@ function info() {
           <a href="https://github.com/Sameer-khan0"><FaGithub style={iconstyle} className="icon" /></a>
         </div>
       </div>
-      <div className="right-content" id="right-c">
+      <div className="right-content h-[50%] md:h-[100%]" id="right-c">
         <motion.div
         className="floatright"  
-        initial={{ left: "-36%" }}
+        initial={{ left: "-30%" }}
         whileInView={{ left: "-7%" }}
         transition={transition}
         >
@@ -78,7 +73,7 @@ function info() {
           whileInView={{ left: "68%" }}
           transition={transition}
         >
-          <img src={imogi} alt="" />
+          <img src={imoji0} alt="Image" />
         </motion.div>
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
@@ -86,7 +81,7 @@ function info() {
           transition={transition}
           className="floatright"
         >
-          <img src={imogi} alt="emoji" />
+          <img src={imoji} alt="emoji" />
         </motion.div>
 
         <motion.div
@@ -105,7 +100,7 @@ function info() {
           <img src={imgbg2} alt="" className="bg-2" />
         </div>
         <div className="profilepic">
-          <img className="proimg" src={Infoimg} alt="profile" />
+          <img className=" h-[100%] " src={Infoimg} alt="profile" />
         </div>
       </div>
     </saction>

@@ -1,5 +1,6 @@
 #info-context {
     width: 100vw;
+    background-image: url('../../../assets/img/sbg.jpg');
     height: 85vh;
     display: flex;
     padding: 2%;

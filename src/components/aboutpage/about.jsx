@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import aboutimg from "./abt1.gif";
+import { useContext } from "react";
+import aboutimg from "./abt0.png";
 import "./about.css";
 import { motion } from "framer-motion";
 import {
@@ -19,7 +19,7 @@ function about() {
    const color={'color':isNightMode?'#bfbfbf':'black'}
   return (
     <section id="about" className="about" style={{background:isNightMode?'black':''}}>
-      <div className="abt-left-con">
+      <div className="abt-left-con h-[50%] ">
         <motion.div
           className="aboutitem"
           initial={{ left: "1rem", top: "0rem" }}
@@ -60,7 +60,7 @@ function about() {
         >
           <a href="https://wa.me/03090248230"><FaWhatsapp /></a>
         </motion.div>
-        <img src={aboutimg} alt="Muhammad Sameer" />
+        <img src={aboutimg} className=" h-[100%] rounded-full object-contain "  alt="Muhammad Sameer" />
       </div>
       <div className="abt-right-con">
         <div className="abt-heading">
