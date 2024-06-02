@@ -6,7 +6,6 @@
     padding: 2%;
     flex-wrap: wrap;
     background-color: #fffcf0;
-    position: relative;
   }
   
   .left-content {
@@ -26,6 +25,7 @@
     position: relative;
     width: 30%;
     height: 100%;
+    position: relative;
   }
   
   .i-name {
