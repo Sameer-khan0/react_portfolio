@@ -6,7 +6,10 @@
     padding: 2%;
     flex-wrap: wrap;
     background-color: #fffcf0;
+<<<<<<< HEAD
     /* position: relative; */
+=======
+>>>>>>> 4cd5a6f7fe1937862ef698fe5c31e149f808dfe3
   }
   
   .left-content {
@@ -24,6 +27,12 @@
     box-sizing: border-box;
     text-align: center;
     position: relative;
+<<<<<<< HEAD
+=======
+    width: 30%;
+    height: 100%;
+    position: relative;
+>>>>>>> 4cd5a6f7fe1937862ef698fe5c31e149f808dfe3
   }
   
   .i-name {
