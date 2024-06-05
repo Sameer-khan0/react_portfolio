@@ -19,7 +19,7 @@ function about() {
    const color={'color':isNightMode?'#bfbfbf':'black'}
   return (
     <section id="about" className="about" style={{background:isNightMode?'black':''}}>
-      <div className="abt-left-con h-[50%] ">
+      <div className="abt-left-con">
         <motion.div
           className="aboutitem"
           initial={{ left: "1rem", top: "0rem" }}

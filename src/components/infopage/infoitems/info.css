@@ -6,7 +6,7 @@
     padding: 2%;
     flex-wrap: wrap;
     background-color: #fffcf0;
-    position: relative;
+    /* position: relative; */
   }
   
   .left-content {
@@ -24,8 +24,6 @@
     box-sizing: border-box;
     text-align: center;
     position: relative;
-    width: 30%;
-    height: 100%;
   }
   
   .i-name {
