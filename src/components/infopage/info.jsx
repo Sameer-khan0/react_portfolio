@@ -12,7 +12,7 @@ import {
   FaWhatsapp,
   FaGithub,
 } from "react-icons/fa";
-import Infoimg from "./infoitems/info2.png";
+import Infoimg from "./infoitems/info1.png";
 import imgbg1 from "../../assets/img/Vector2.png";
 import imgbg2 from "../../assets/img/Vector1.png";
 import { themeContext } from "../../Context";
